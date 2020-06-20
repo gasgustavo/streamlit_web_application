@@ -27,9 +27,9 @@ def load_data(nrows):
 n_rows = st.sidebar.slider(
     label="Number of rows of data to open",
     min_value=0,
-    max_value=1000000,
+    max_value=100000,
     value=100000,
-    step=1000
+    step=10000
 )
 
 data = load_data(n_rows)
